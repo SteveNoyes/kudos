@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>kudos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kudos Post Wall</title>
+    <style>
+        .post { margin-bottom: 20px; border: 1px solid #ccc; padding: 10px; }
+        .like-btn { cursor: pointer; color: blue; }
+    </style>
 </head>
 <body>
-  
+    <h1>Kudos Wall</h1>
+    <div id="post-form">
+        <textarea id="post-content"></textarea><br/>
+        <button onclick="createPost()">Post</button>
+    </div>
+    <div id="post-wall"></div>
+
+    <script src="app.js"></script>
 </body>
 </html>
